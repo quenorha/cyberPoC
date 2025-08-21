@@ -12,11 +12,12 @@ This is a reminder that this port isn't secure, should be disabled. The discover
 `python3 scan_codesys.py 192.168.1.255`
 
 Example of result :
-`IP Address      Device Name          Complete Name                            Manufacturer              MAC Address
-192.168.1.12   PFC300-68415F        WAGO 750-8302 PFC300 2ETH RS             WAGO                      0030DE684161
-192.168.1.4    PFC200V3-48117C      WAGO 750-8210 PFC200 G2 4ETH             WAGO                      0030DE48117C
-192.168.1.5    0030DE5A9782         750-8001 Basic Controller 100 2ETH       WAGO GmbH & Co. KG        37SUN31564010260523873+0000000000000176
-`
+
+`IP Address      Device Name          Complete Name                            Manufacturer              MAC Address`
+`192.168.1.12   PFC300-68415F        WAGO 750-8302 PFC300 2ETH RS             WAGO                      0030DE684161`
+`192.168.1.4    PFC200V3-48117C      WAGO 750-8210 PFC200 G2 4ETH             WAGO                      0030DE48117C`
+`192.168.1.5    0030DE5A9782         750-8001 Basic Controller 100 2ETH       WAGO GmbH & Co. KG        37SUN31564010260523873+0000000000000176`
+
 
 ## wagoservice.py
 
@@ -38,17 +39,17 @@ where :
 
 Example and results :
 
-python3 wagoservice.py discover 192.68.1.0/24
-+---------------------+---------------------+---------------------+---------------------+---------------------+
-| IP Address          | MAC Address         | PSN                 | SW-VER              | SN                  |
-+---------------------+---------------------+---------------------+---------------------+---------------------+
-| 192.168.1.1         | 00:30:DE:0A:93:56   | 750-880             | 01.08.25(16)        | SN20121115T113608-0416146#PFC|0030DE069605 |
-| 192.168.1.2         | 00:30:DE:06:96:05   | 750-8001            | 01.04.02(00)        | SN20230403T202128-1738604#BC|0030DE5A9782 |
-| 192.168.1.3         | 00:30:DE:5A:97:82   | 751-9301            | 04.06.03(28)        | 37SUN31564010260470190+0000000002347218 |
-| 192.168.1.4         | 00:30:DE:4E:6F:EC   | 750-8302            | 04.06.01(28)        | 37SUN31564010260575922+0000000000001690 |
-| 192.168.1.5         | 00:30:DE:68:41:5F   | 750-8210            | 04.05.10(27)        | 37SUN31564010260429954+0000000000000008 |
-| 192.168.1.6         | 00:30:DE:48:11:7C   | 750-8217            | 03.10.10(22)        | 37SUN31564010260430577+0000000000003662 |
-+---------------------+---------------------+---------------------+---------------------+---------------------+
+`python3 wagoservice.py discover 192.68.1.0/24`
+`+---------------------+---------------------+---------------------+---------------------+---------------------+`
+`| IP Address          | MAC Address         | PSN                 | SW-VER              | SN                  |`
+`+---------------------+---------------------+---------------------+---------------------+---------------------+`
+`| 192.168.1.1         | 00:30:DE:0A:93:56   | 750-880             | 01.08.25(16)        | SN20121115T113608-0416146#PFC|0030DE069605 |`
+`| 192.168.1.2         | 00:30:DE:06:96:05   | 750-8001            | 01.04.02(00)        | SN20230403T202128-1738604#BC|0030DE5A9782 |`
+`| 192.168.1.3         | 00:30:DE:5A:97:82   | 751-9301            | 04.06.03(28)        | 37SUN31564010260470190+0000000002347218 |`
+`| 192.168.1.4         | 00:30:DE:4E:6F:EC   | 750-8302            | 04.06.01(28)        | 37SUN31564010260575922+0000000000001690 |`
+`| 192.168.1.5         | 00:30:DE:68:41:5F   | 750-8210            | 04.05.10(27)        | 37SUN31564010260429954+0000000000000008 |`
+`| 192.168.1.6         | 00:30:DE:48:11:7C   | 750-8217            | 03.10.10(22)        | 37SUN31564010260430577+0000000000003662 |`
+`+---------------------+---------------------+---------------------+---------------------+---------------------+`
 
 
 ## One-liner commands
@@ -65,4 +66,4 @@ Can be used directly on a WAGO Linux-based PLC.
 # Disclaimer  
 This collection of tools is intended solely for legitimate and authorized use in conducting cybersecurity demonstration within a network. Users are required to obtain proper authorization from network owners or administrators before use.
 
-The developer of this program assumes no responsibility for any unauthorized use or any consequences arising from the improper application of this tool. By using this tool, you agree that you have the necessary permissions and you assume all liability associated with its use. Please ensure compliance with all applicable laws and regulations regarding network scanning and cybersecurity practices.
+The developer of this program assumes no responsibility for any unauthorized use or any consequences arising from the improper application of this tools. By using this tools, you agree that you have the necessary permissions and you assume all liability associated with its use. Please ensure compliance with all applicable laws and regulations regarding network scanning and cybersecurity practices.
