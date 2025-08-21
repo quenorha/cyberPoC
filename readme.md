@@ -14,10 +14,10 @@ This is a reminder that this port isn't secure, should be disabled. The discover
 Example of result :
 
 ```
-IP&nbsp;Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Device&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Complete&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manufacturer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MAC&nbsp;Address
-192.168.1.12&nbsp;&nbsp;&nbsp;PFC300-68415F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WAGO&nbsp;750-8302&nbsp;PFC300&nbsp;2ETH&nbsp;RS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WAGO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0030DE684161
-192.168.1.4&nbsp;&nbsp;&nbsp;&nbsp;PFC200V3-48117C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WAGO&nbsp;750-8210&nbsp;PFC200&nbsp;G2&nbsp;4ETH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WAGO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0030DE48117C
-192.168.1.5&nbsp;&nbsp;&nbsp;&nbsp;0030DE5A9782&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;750-8001&nbsp;Basic&nbsp;Controller&nbsp;100&nbsp;2ETH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WAGO&nbsp;GmbH&nbsp;&&nbsp;Co.&nbsp;KG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;37SUN31564010260523873+0000000000000176
+IP Address      Device Name          Complete Name                            Manufacturer              MAC Address                               
+192.168.1.12   PFC300-68415F        WAGO 750-8302 PFC300 2ETH RS             WAGO                      0030DE684161                                 
+192.168.1.4    PFC200V3-48117C      WAGO 750-8210 PFC200 G2 4ETH             WAGO                      0030DE48117C                            
+192.168.1.5    0030DE5A9782         750-8001 Basic Controller 100 2ETH       WAGO GmbH & Co. KG        37SUN31564010260523873+0000000000000176
 ```
 
 ## wagoservice.py
@@ -41,15 +41,15 @@ where :
 Example and results :
 ```
 python3 wagoservice.py discover 192.68.1.0/24
-+---------------------+---------------------+---------------------+---------------------+---------------------+
-|&nbsp;IP&nbsp;Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;MAC&nbsp;Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;PSN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;SW-VER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;SN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
-+---------------------+---------------------+---------------------+---------------------+---------------------+
-|&nbsp;192.168.1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;00:30:DE:0A:93:56&nbsp;&nbsp;&nbsp;|&nbsp;750-880&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;01.08.25(16)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;SN20121115T113608-0416146#PFC|0030DE069605&nbsp;|
-|&nbsp;192.168.1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;00:30:DE:06:96:05&nbsp;&nbsp;&nbsp;|&nbsp;750-8001&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;01.04.02(00)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;SN20230403T202128-1738604#BC|0030DE5A9782&nbsp;|
-|&nbsp;192.168.1.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;00:30:DE:5A:97:82&nbsp;&nbsp;&nbsp;|&nbsp;751-9301&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;04.06.03(28)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;37SUN31564010260470190+0000000002347218&nbsp;|
-|&nbsp;192.168.1.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;00:30:DE:4E:6F:EC&nbsp;&nbsp;&nbsp;|&nbsp;750-8302&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;04.06.01(28)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;37SUN31564010260575922+0000000000001690&nbsp;|
-|&nbsp;192.168.1.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;00:30:DE:68:41:5F&nbsp;&nbsp;&nbsp;|&nbsp;750-8210&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;04.05.10(27)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;37SUN31564010260429954+0000000000000008&nbsp;|
-|&nbsp;192.168.1.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;00:30:DE:48:11:7C&nbsp;&nbsp;&nbsp;|&nbsp;750-8217&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;03.10.10(22)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;37SUN31564010260430577+0000000000003662&nbsp;|
++---------------------+---------------------+---------------------+---------------------+---------------------+                          
+| IP Address          | MAC Address         | PSN                 | SW-VER              | SN                  |                        
++---------------------+---------------------+---------------------+---------------------+---------------------+                        
+| 192.168.1.1         | 00:30:DE:0A:93:56   | 750-880             | 01.08.25(16)        | SN20121115T113608-0416146#PFC|0030DE069605 |
+| 192.168.1.2         | 00:30:DE:06:96:05   | 750-8001            | 01.04.02(00)        | SN20230403T202128-1738604#BC|0030DE5A9782 |
+| 192.168.1.3         | 00:30:DE:5A:97:82   | 751-9301            | 04.06.03(28)        | 37SUN31564010260470190+0000000002347218 |
+| 192.168.1.4         | 00:30:DE:4E:6F:EC   | 750-8302            | 04.06.01(28)        | 37SUN31564010260575922+0000000000001690 |
+| 192.168.1.5         | 00:30:DE:68:41:5F   | 750-8210            | 04.05.10(27)        | 37SUN31564010260429954+0000000000000008 |
+| 192.168.1.6         | 00:30:DE:48:11:7C   | 750-8217            | 03.10.10(22)        | 37SUN31564010260430577+0000000000003662 |
 +---------------------+---------------------+---------------------+---------------------+---------------------+
 ```
 
