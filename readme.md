@@ -8,6 +8,20 @@ testing only.
 
 ---
 
+## Installation
+```bash
+# Clone the repository
+git clone https://github.com/quenorha/cyberPoC.git
+cd cyberPoC
+
+# Install nmap (if not already installed)
+# Debian / Ubuntu / WAGO Linux PLC
+sudo apt install nmap
+
+# No Python dependencies required — standard library only
+```
+
+
 ## Tools
 
 ### `scan_codesys.py` — CODESYS Gateway Discovery (UDP/1740)
